@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Penakia</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand">
+                    Panakeia
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navi">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="">Fusce at</a>
+                    </li>
+                    <li>
+                        <a href="">Facilisis</a>
+                    </li>
+                    <li>
+                        <a href="">Ante donec</a>
+                    </li>
+                    <li>
+                        <a href="">Blandit rhoncus</a>
+                    </li>
+                    <li>
+                        <a href="">Placerat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <div class="top-content">
+                    <h2 class="title">Integer at tortor ut magna</h2>
+                    <p class="subtitle">finibus lobortis sed quis tellus.</p>
+                </div>
+                <div class="down-content margin-top">
+                    <div class="one-box-content">
+                        <img src="ob1.png" alt="">
+                        <h4 class="subtitle">Tincidunt</h4>
+                        <p class="text">Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas
+                            efficitur. Sed quam dolor.</p>
+                    </div>
+                    <div class="one-box-content">
+                        <img src="ob2.png" alt="">
+                        <h4 class="subtitle">Tincidunt</h4>
+                        <p class="text">Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper
+                            non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst. </p>
+                    </div>
+                    <div class="one-box-content">
+                        <img src="ob3.png" alt="">
+                        <h4 class="subtitle">Tincidunt</h4>
+                        <p class="text">Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu
+                            arcu, faucibus eu risus blandit,.</p>
+                    </div>
+                </div>
+                <span>
+                    <a href="" class="btn btn-home">Read more</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            if (top >= 60) {
+                $("nav").addClass('fixed-nav');
+            } else if ($("nav").hasClass('fixed-nav')) {
+                $("nav").removeClass('fixed-nav');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
