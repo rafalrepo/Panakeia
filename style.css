@@ -70,7 +70,7 @@ html {
 /* home section */
 
 #home {
-    background: url('bg-1.png') no-repeat;
+    background: url('img/bg-1.png') no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -152,6 +152,25 @@ html {
     background-color: var(--colnews);
     border: 1px solid var(--colnews);
 }
+
+
+/* newsletter */
+
+#newsletter{
+    background-color: black;
+    text-align: center;
+}
+.input-content{
+    position: relative;
+}
+.newsletter-input{
+    padding: 1em 3em;
+    border-radius: 27px;
+    border: 1px solid var(--title);
+    position: absolute;
+    left: 0;
+}
+
 @media (max-width: 576px) {}
 
 /*  // Medium devices (tablets, 768px and up) */
