@@ -157,9 +157,18 @@ html {
 /* newsletter */
 
 #newsletter{
-    background-color: black;
+    background: url('img/bg-new.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 384px;
     text-align: center;
 }
+
+#newsletter .content{
+    margin-top: 10%
+}
+
 .input-content{
     position: relative;
 }
@@ -167,8 +176,32 @@ html {
     padding: 1em 3em;
     border-radius: 27px;
     border: 1px solid var(--title);
+    margin-left: -70px;
+    opacity: 0.5;
+    transition: .5s ease-in-out;
+}
+
+.newsletter-input:focus{
+    opacity: 0.8;
+}
+
+.input-content button{
     position: absolute;
-    left: 0;
+    top: 0;
+    left: 53%;
+    padding: 1em 3em;
+    border-radius: 27px;
+    color: var(--colbtn);
+    background-color: var(--title);
+    border: 1px solid var(--title);
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+.input-content button:hover{
+    color: var(--title);
+    background-color: var(--colbtn);
+    border: 1px solid var(--colbtn);
 }
 
 @media (max-width: 576px) {}
