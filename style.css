@@ -4,6 +4,8 @@
     --colbtn: #612316;
     --colred: #dd4b2b;
     --colnews: #4e5159;
+    --textdesc: #000000;
+    --colnb: #4b4e73;
 }
 
 html {
@@ -89,14 +91,14 @@ html {
 }
 
 #home .content .down-content,
-#news .down-content {
+#news .down-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 
-#home .content .down-content .one-box-content, 
-#news .down-content .one-box-content{
+#home .content .down-content .one-box-content,
+#news .down-content .one-box-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,45 +120,46 @@ html {
 }
 
 /* news style */
-#news{
+
+#news {
     background-color: #edeff1;
 }
 
-#news .subtitle{
+#news .subtitle {
     color: var(--subtitle);
 }
 
-#news .down-content .one-box-content img{
+#news .down-content .one-box-content img {
     display: block;
     width: 100%;
 }
 
-#news .down-content .one-box-content .subtitle{
+#news .down-content .one-box-content .subtitle {
     font-size: 1.5em;
     margin-top: 1.5em;
 }
 
-#news .down-content .one-box-content .text{
+#news .down-content .one-box-content .text {
     color: var(--subtitle);
     margin-bottom: 1.5em;
     padding: 0 2em;
 }
 
-.btn-news{
+.btn-news {
     color: var(--colnews);
     background-color: var(--title);
     border: 1px solid var(--title);
 }
-.btn-news:hover{
+
+.btn-news:hover {
     color: var(--title);
     background-color: var(--colnews);
     border: 1px solid var(--colnews);
 }
 
-
 /* newsletter */
 
-#newsletter{
+#newsletter {
     background: url('img/bg-new.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,14 +168,15 @@ html {
     text-align: center;
 }
 
-#newsletter .content{
+#newsletter .content {
     margin-top: 10%
 }
 
-.input-content{
+.input-content {
     position: relative;
 }
-.newsletter-input{
+
+.newsletter-input {
     padding: 1em 3em;
     border-radius: 27px;
     border: 1px solid var(--title);
@@ -181,11 +185,11 @@ html {
     transition: .5s ease-in-out;
 }
 
-.newsletter-input:focus{
+.newsletter-input:focus {
     opacity: 0.8;
 }
 
-.input-content button{
+.input-content button {
     position: absolute;
     top: 0;
     left: 53%;
@@ -198,24 +202,93 @@ html {
     transition: .5s ease-in-out;
 }
 
-.input-content button:hover{
+.input-content button:hover {
     color: var(--title);
     background-color: var(--colbtn);
     border: 1px solid var(--colbtn);
 }
+
+/* description */
+
+#description .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    color: black !important;
+    padding: 1.5em;
+}
+
+#description .content .subtitle,
+#description .content .text {
+    color: var(--textdesc) !important;
+    margin: 1em;
+}
+
+#description .content .btn-description {
+    color: var(--title);
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--colred);
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+    margin-top: 1em;
+}
+
+#description .content .btn-description-2 {
+    color: var(--title);
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--colnb);
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+    margin-top: 1em;
+}
+
+#menuFooter{
+    background-color: #d75d0e;
+    padding: 3em;
+}
+
+#menuFooter .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+#menuFooter .content ul{
+    list-style: none;
+}
+
+#menuFooter .content ul li{
+    padding: 0.4em;
+}
+
+#menuFooter .content ul li a{
+    color: var(--title);
+    text-decoration: none;
+}
+
+
+
+
 
 @media (max-width: 576px) {}
 
 /*  // Medium devices (tablets, 768px and up) */
 
 @media (max-width: 768px) {
-    #home .content .down-content,  #news .down-content {
+    #home .content .down-content,
+    #news .down-content, 
+    #description .content,
+    #menuFooter .content {
         grid-template-columns: 1fr;
     }
-    #news .down-content .one-box-content img{
+    #news .down-content .one-box-content img {
         display: block;
         width: 50%;
     }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -270,7 +343,7 @@ html {
 }
 
 .fixed-nav {
-    background:  #edeff1;
+    background: #edeff1;
     padding: 12px 0;
 }
 
@@ -279,5 +352,5 @@ html {
     font-size: 2em !important;
     font-weight: 700;
     text-align: center;
+    
 }
-
